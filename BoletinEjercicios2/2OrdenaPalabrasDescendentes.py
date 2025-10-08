@@ -4,7 +4,7 @@ palabra2 = input("Introduzca otra palabra")
 palabra3 = input("Introduzca otra palabra")
 
 lista = [palabra1, palabra2, palabra3]
-lista.sort()
+lista.sort(reverse=True)
 texto=str(lista)
 texto = texto.replace("[","")
 texto = texto.replace("]","")
