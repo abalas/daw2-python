@@ -1,3 +1,6 @@
+from os import truncate
+
+
 def cumpleRango(n):
     return 0 <= n <= 10
 
@@ -10,7 +13,10 @@ while datosIncorrectos:
 
     if cumpleRango(notaTrabajoEnClase) and cumpleRango(notaEjerciciosPracticos) and cumpleRango(notaExamen):
         media = notaTrabajoEnClase * 0.05 + notaEjerciciosPracticos * 0.15 + notaExamen * 0.80
-        print("La nota final es:", media)
-        datosIncorrectos = False
+        if media<5:
+            truncate(media)
+        else :
+            print("La nota final es:", media)
+            datosIncorrectos = False  # ✅ Salimos del bucle
     else:
         print("Alguna nota es incorrecta. Introduce valores entre 0 y 10.")
