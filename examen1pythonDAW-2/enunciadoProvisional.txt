@@ -1,0 +1,17 @@
+EJERCICIO 1 (uno.py)
+Escribe un programa que solicite dos números enteros al usuario y muestre todos los números capicúa que existen en ese rango (ambos números incluidos).
+Un número capicúa es aquel que se lee igual de izquierda a derecha que de derecha a izquierda (por ejemplo: 121, 5, 1331).
+Formato de salida:
+
+Si existen números capicúa, mostrarlos separados por comas.
+Si no existen números capicúa en el rango, indicarlo con un mensaje apropiado.
+
+
+EJERCICIO 2 (dos.py)
+Crea un programa que pida una cadena de texto al usuario y muestre esa cadena con sus caracteres reordenados aleatoriamente.
+
+EJERCICIO 3 (tres.py)
+Desarrolla un programa que analice una lista de números y muestre únicamente aquellos números que aparecen más de una vez, indicando cuántas veces se repite cada uno.
+
+EJERCICIO 4 (cuatro.py)
+Escribe un programa que solicite al usuario una cantidad de segundos y la convierta a su equivalente en días, horas, minutos y segundos, mostrando únicamente las unidades de tiempo que tengan un valor mayor a cero.
