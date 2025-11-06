@@ -19,8 +19,7 @@ while(numeroValido==False):
     if(len(numero)!=4):
         pass
     else:
-        numeroSinRepeticion = set(numero)
-        if(len(numeroSinRepeticion)!=4):
+        if(numero.count(numero[0])==4):
             pass
         else:
             if numero.isdigit():
