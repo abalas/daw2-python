@@ -1,5 +1,5 @@
 import re
-patron=r"[0-9]{4}[\s|-][B-DF-HJL-NPR-TV-Z]{3}"
+patron=r"[^579]"
 num1="655112233"
 num2="913345555"
 
@@ -12,6 +12,7 @@ else:
 
 
 """"
+^ Acento circunflejo frances
 match: valida al principio
 search: lo busca dentro de la cadena
 fullmatch: mas util
