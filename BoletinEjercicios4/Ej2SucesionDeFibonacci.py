@@ -9,25 +9,28 @@ metemos un 8 la salida de tu programa debería de ser así:
 0,1,1,2,3,5,8,13"""
 
 def calcularSucesionDeFibonacci(numero):
-    cadena = ""
-    if(numero==1):
-        cadena = "0"
-    if(numero==2):
-        cadena = "0,1"
-    if(numero > 2):
-        cadena = "0,1"
-        a=0
-        b=1
-        c=1
-        aux = c
-        for i in range(0,numero-2):
-            aux = c
-            a = b
-            b=c
-            c = a + b
-            cadena += f",{aux}"
+    if numero <= 0:
+        return ""
+
+    if numero == 1:
+        return "0"
+
+    if numero == 2:
+        return "0,1"
+
+    a = 0
+    b = 1
+    cadena = "0,1"
+
+    for i in range(numero - 2):
+        c = a + b
+        cadena += f",{c}"
+        a = b
+        b = c
 
     return cadena
 
-numero = int(input("Introduce un número:"))
+
+numero = int(input("Introduce un número: "))
 print(calcularSucesionDeFibonacci(numero))
+
