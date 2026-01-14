@@ -55,3 +55,12 @@ class Pokemon:
         tipos = " / ".join(self._tipos)
         return f"{self._nombre} (#{self._codigo}) - {tipos}"
 
+venusaur = Pokemon(3, "Venusaur", ["Planta", "Veneno"])
+ivysaur = Pokemon(2, "Ivysaur", ["Planta", "Veneno"], evolucion=venusaur)
+bulbasaur = Pokemon(1, "Bulbasaur", ["Planta", "Veneno"], evolucion=ivysaur)
+
+print(bulbasaur)
+bulbasaur = bulbasaur.evolucionar()
+print(bulbasaur)
+bulbasaur = bulbasaur.evolucionar()
+print(bulbasaur)

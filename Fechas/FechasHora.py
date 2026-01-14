@@ -1,6 +1,6 @@
 """
 En java se usa LocalDate,  LocalTime y LocalDateTime
-Hay que hacer un imprort dara, time y datetime
+Hay que hacer un imprort date, time y datetime
 """
 from datetime import date, time, datetime, timedelta
 hoy = date.today()
